@@ -22,7 +22,7 @@ For simplity we will use the Model View Controller(MVC) architecture which allow
 
 ## Architecture
 
-![Frontend](./images/guestbook.png)
+![Frontend](./images/mvc-design.png)
 
 ## Design Decisions
 
