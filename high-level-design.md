@@ -18,14 +18,18 @@ React is a JavaScript library for building UI components. Unlike more complete f
 ![Frontend](./images/mvc-design.png)
 
 Developing a React App requires creating one or more React components that can interact with each other. 
-•	A React component is simply a JavaScript class that requires the render function to be declared. 
-•	The render function simply outputs HTML code, which is implemented using either JSX or JavaScript code. 
-•	A React component may also require additional functions for handling data, actions and lifecycle events.
+-	A React component is simply a JavaScript class that requires the render function to be declared. 
+-	The render function simply outputs HTML code, which is implemented using either JSX or JavaScript code. 
+-	A React component may also require additional functions for handling data, actions and lifecycle events.
+
+### Stateless Component
 React components can also be labeled as either stateful components (containers) or stateless components. 
 The purpose of the stateless component is to 
 1.	display data that it receives from its parent React component
 2.	receive events and inputs, which it passes up to its parent to handle. 
-The purpose of the React container or stateful component is to 
+
+### React Container (Stateful component)
+he purpose of the React container or stateful component is to 
 3.	render one or more child components
 4.	fetch data from external sources and 
 5.	feeds it to its child components. 
