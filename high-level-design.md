@@ -12,6 +12,8 @@ For simplity we will use the Model View Controller(MVC) architecture which allow
 ![Frontend](./images/mvc-image.png)
 
 # Design Decisions
+![Frontend](./images/mvc-design.png)
+>>>>>>> dcac34fc5ea90d36a5142aa0d1fdf5b266ec909e
 
 ## React Overview
 React is a JavaScript library for building UI components. Unlike more complete frameworks such as Angular or Vue, React deals only with the view layer. Hence, you’ll need additional libraries to handle things such as data flow, routing, authentication etc. In this guide, we’ll focus on what React can do.
@@ -57,13 +59,6 @@ my-app
     ├── logo.svg
     └── serviceWorker.js
 ```
-
-=======
-![Frontend](./images/mvc-design.png)
->>>>>>> dcac34fc5ea90d36a5142aa0d1fdf5b266ec909e
-
-
-![Frontend](./images/mvc-design.png)
 
 ## Project Structure
 ```
