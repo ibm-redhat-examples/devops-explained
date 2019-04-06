@@ -1,0 +1,36 @@
+
+
+
+```
+project/
+  controllers/
+    users.js
+  util/
+    plugin.js
+  middlewares/
+    auth.js
+  models/
+    user.js
+  routes/
+    user.js
+    router.js
+  public/
+    js/
+    css/
+    img/
+  views/
+    users/
+      index.jade
+  tests/
+    users/
+      create-user-test.js
+      update-user-test.js
+      get-user-test.js
+  .gitignore
+  app.js
+  package.json
+  ```
+
+
+##
+https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
