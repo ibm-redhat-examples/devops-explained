@@ -1,0 +1,58 @@
+
+
+References
+1. https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+
+
+## How to setup MongoDB
+References:
+- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+- https://hackernoon.com/how-to-combine-a-nodejs-back-end-with-a-reactjs-front-end-app-ea9b24715032
+
+## Best Pracices
+Here are s
+
+
+use only tools and libraries that are essential.
+dding more tools and libraries that might be useful in the future just adds up complexity and slows down your development.
+
+
+```
+project/
+  controllers/
+    users.js
+  util/
+    plugin.js
+  middlewares/
+    auth.js
+  models/
+    user.js
+  routes/
+    user.js
+    router.js
+  public/
+    js/
+    css/
+    img/
+  views/
+    users/
+      index.jade
+  tests/
+    users/
+      create-user-test.js
+      update-user-test.js
+      get-user-test.js
+  .gitignore
+  app.js
+  package.json
+  ```
+
+
+##
+https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+
+
+## How to setup MongoDB
+References:
+- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+- https://hackernoon.com/how-to-combine-a-nodejs-back-end-with-a-reactjs-front-end-app-ea9b24715032
