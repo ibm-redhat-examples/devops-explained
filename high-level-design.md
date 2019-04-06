@@ -16,7 +16,7 @@ In a recent article[1], Vivek Madurai, identified several different approaches f
 
 For simplity we will use the Model View Controller(MVC) architecture which allows us to split the development between multiple teams so that the frontend app can be maintained separately from that of microservice backend.
 
-![Frontend](./images/mvc-images.png)
+![Frontend](./images/mvc-image.png)
 
 ## Design Decisions
 
