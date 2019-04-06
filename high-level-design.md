@@ -1,6 +1,5 @@
-#
+# Introduction
 
-## Best Practices
 Building a Microservices based architecture make sense for many cloud based distributed applications. The Microservices approach allows a large project to split the development resources in to small independent teams. Using this approach helps improve scalability, complexity of the code, rolling out to production etc.
 
 In a recent article[1], Vivek Madurai, identified several different approaches for frontend design
