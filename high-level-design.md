@@ -18,6 +18,12 @@ For simplity we will use the Model View Controller(MVC) architecture which allow
 
 ![Frontend](./images/mvc-image.png)
 
+
+
+## Architecture
+
+![Frontend](./images/guestbook.png)
+
 ## Design Decisions
 
 ## Project Structure
