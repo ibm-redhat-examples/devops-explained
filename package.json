@@ -1,0 +1,25 @@
+{
+  "name": "phonebook",
+  "version": "1.0.0",
+  "description": "this will be used in my phonebook app",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified \\\" && exit 1\","
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simple-best/devops-explained.git"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "Reedy Feggins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simple-best/devops-explained/issues"
+  },
+  "homepage": "https://github.com/simple-best/devops-explained#readme"
+}
