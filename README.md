@@ -4,7 +4,7 @@ devops-explained
 
 ## References
 1. Choosing the best IDe
-    - Java
+    - [Java](./docs/best-ide.md)
     - Python
     - Node
 1. [Frontend in Microservice Architecture](https://medium.com/@vivekmadurai/frontend-in-microservice-architecture-1e5bfa08e3e4)
