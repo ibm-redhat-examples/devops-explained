@@ -8,13 +8,37 @@ In a microservice architecture the frontend and backend separated.  The frontend
 
 While many architects don't normally cover the frontend applications as part of the microservice architecture, in this example we will spend some time quickly discussing some of the options.  In the traditional frontend and backend design, the Mobile App or Website directly accesses the backend service, the backend microservices call each other, and then return the final result to the frontend client. For clients (especially mobile), too many HTTP requests are expensive.
 
-Therefore, in order to minimize the number of requests, the frontend generally tends to obtain associated data through a single API. It means that sometimes the backend will do some UI-related logic processing to meet the needs of the client.
+In addition, the features of mobile devices are very different. Some have less screen real estate requiring to UI to display data differently. Others need to limit the number of requests to conservie battery life.
+
+In order to minimize the number of requests, the frontend generally tends to obtain associated data through a single API. It means that sometimes the backend will do some UI-related logic processing to meet the needs of the client.
 
 Using the BFF approach, each client will have a BFF service. With BFF, there are fewer mutual calls between microservices. This is because some UI logic is processed at the BFF level.
 
 ![Backed Ended to Frontend](images/bff-microservice.png)
 
+
+The BFF is tightly coupled to a specific user experience, and will typically be maintained by the same team as the user interface, thereby making it easier to define and adapt the API as the UI requires, while also simplifying process of lining up release of both the client and server components.
+
+![Backed Ended to Frontend](images/bff-overview.jpg)
+
 In addition, using the BFF’s approach the frontend (Mobile, Web) no longer directly accesses the backend microservices, but rather accesses it through the BFF layer. 
+
+Further, while in some situations both iOS and Android can use the same BFF, its often better if each mobile type has a separate BFF.  Also, given the skills, experiences and varying technologies required, ios and android frontend applications are often maintained by different teams.
+
+> Pete Hodgson made the observation that BFFs work best when aligned around team boundaries, so team 
+> structure should drive how many BFFs you have. So that if you have a single mobile team, you > 
+> should have one BFF, but if you had separate iOS and Android teams, you'd have separate BFFs. 
+
+So you can see your organisation structure as being one of the main drivers to which model makes the most sense (Conway's Law wins again).
+
+## Team Structure
+
+F
+![Team Structure](images/bff-duplication.jpg)
+https://samnewman.io/patterns/architectural/bff/
+
+
+![Team Structure](images/ms-team-ownership.jpg)
 
 ## API
 
@@ -70,6 +94,10 @@ Response:
 ```
 
 ## References
-[Frontend a Microservice Architecture](https://medium.com/@vivekmadurai/frontend-in-microservice-architecture-1e5bfa08e3e4)
+1. [Frontend a Microservice Architecture](https://medium.com/@vivekmadurai/frontend-in-microservice-architecture-1e5bfa08e3e4)
 
-[Backend-For-Frontend using GraphQL under Microservices](https://medium.com/tech-tajawal/backend-for-frontend-using-graphql-under-microservices-5b63bbfcd7d9)
+1. [Backend-For-Frontend using GraphQL under Microservices](https://medium.com/tech-tajawal/backend-for-frontend-using-graphql-under-microservices-5b63bbfcd7d9)
+
+1. [Pattern: Backends For Frontends](https://samnewman.io/patterns/architectural/bff/)
+
+1. [Pattern: Backends For Frontends - Single-purpose Edge Services for UIs and external parties](https://samnewman.io/patterns/architectural/bff/)
