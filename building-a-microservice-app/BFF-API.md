@@ -70,19 +70,28 @@ BFF is actually considered like this implementation mode of API Gateway.
 
 ![Separate API Gateway for each Client](./images/separate-api-gateway-for-each-client.png)
 
-\At this stage we realised that the BFF wasn’t an API used by the application. The BFF was part of the application.
+## REST API 
 
-## Refactoring Microservices
-One concern that often arises with microservices is the complexity that comes when an application needs a large microservices to provide value.
+REST can be accessed through the following way:
 
-Without some thought, each microservice can hava a lot of duplicated code. For example concern accessing user data. The current microservies would need to contain code to get and potentially write to the "user profile". 
+Request:
 
-At some point, it may be better to refactor the application to create a "user profile microservice" that can be developed by an independent team, eliminating the need to have duplicated code across all the other BFFs.
+```
 
-Duplicated code is often a sign that there may be a missing object in your domain model.  To fix that, we created a UserProfileService that would deal with this duplicated logic.
+GET http://127.0.0.1/api/accounts
+```
 
-
-![User Profile](./images/bff-ms-userprofile.png)
+Response:
+```
+[
+  {
+    "id": 88,
+    "name": "Mena Meseha",
+    "photo": "http://bucket.s3.amazonaws.com/photo.jpg"
+  },
+  ...
+]
+```
 
 ## References
 1. [Frontend a Microservice Architecture](https://medium.com/@vivekmadurai/frontend-in-microservice-architecture-1e5bfa08e3e4)
@@ -92,6 +101,3 @@ Duplicated code is often a sign that there may be a missing object in your domai
 1. [Pattern: Backends For Frontends](https://samnewman.io/patterns/architectural/bff/)
 
 1. [Pattern: Backends For Frontends - Single-purpose Edge Services for UIs and external parties](https://samnewman.io/patterns/architectural/bff/)
-
-1. https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html
-
